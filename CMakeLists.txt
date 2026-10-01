@@ -7,7 +7,7 @@ endif()
 
 # The library: C11 and libm, nothing else. Drop include/ and src/ into any
 # project (SDL, OpenGL, your own window code) and build these files.
-add_library(zen_vector STATIC src/pixel.c src/geom.c src/raster.c src/paint.c src/fill.c src/stroke.c src/font.c src/filter.c src/canvas.c src/flash.c)
+add_library(zen_vector STATIC src/pixel.c src/geom.c src/raster.c src/paint.c src/fill.c src/stroke.c src/font.c src/filter.c src/canvas.c src/flash.c src/script.c)
 target_include_directories(zen_vector PUBLIC include)
 target_compile_features(zen_vector PUBLIC c_std_11)
 if(NOT WIN32)

@@ -16,6 +16,7 @@ A 2D vector rasterizer in C11 with a Canvas 2D API and a Flash-style display lis
 | `zv_canvas.h` | Canvas 2D: state stack, transforms, paths incl. `arc`, `arcTo`, `ellipse`, `roundRect`, clip, 15 composite operations, `drawImage`, image data, text, shadows, layers |
 | `zv_font.h` | TrueType outlines as paths (cmap 4 and 12, composite glyphs, kerning), glyph cache |
 | `zv_filter.h` | gaussian blur (three box blurs) on surfaces and masks |
+| `zv_script.h` | a text script of Canvas commands (one per line) run on a canvas: the format the tests share with the browser, and a compact way for tools to describe a drawing |
 | `zv_flash.h` | retained `Graphics` (`beginFill`, `lineStyle`, `curveTo`, `drawRoundRect`, `drawPath`, ...), `Sprite` tree with matrix, alpha, mask, blend modes and `cacheAsBitmap`, `Stage` with dirty rectangles |
 
 ## Using it
